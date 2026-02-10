@@ -1,0 +1,32 @@
+# Data and model outputs (large; regenerate with pipeline)
+data/*.h5ad
+data/**/*.h5ad
+results/models/
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# scCobra (external tool; clone separately if needed)
+scCobra/
+
+# Optional: ignore all pipeline outputs (uncomment to keep repo small)
+# data/
+# results/
+# figures/

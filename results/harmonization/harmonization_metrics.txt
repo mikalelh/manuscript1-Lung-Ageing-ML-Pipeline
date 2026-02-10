@@ -1,0 +1,47 @@
+Harmonization quality metrics (discovery_combined)
+==================================================
+
+Batch mixing (lower = better mixing):
+  silhouette_batch       = 0.04653540253639221
+  graph_connectivity    = 0.9273  (LCC of cross-batch k-NN graph)
+
+Biology preservation (higher = better):
+  silhouette_cell_type  = 0.11307758837938309
+  ARI (Leiden vs cell_type) = 0.6463093414912734
+  NMI (Leiden vs cell_type) = 0.8056706599885379
+
+k-NN local mixing (higher mixing_score = more mixed):
+  kNN_same_batch_fraction_mean  = 0.7006
+  kNN_same_batch_fraction_median = 0.7368
+  mixing_score (1 - mean same_batch) = 0.2994
+
+  n_cells = 45287, n_batches = 2, n_cell_types = 34
+
+Per-cluster batch diversity: mean entropy = 0.8512
+
+Per-cluster batch composition (fractions and n_cells):
+dataset_source    calico  tabula_muris  n_cells   entropy
+leiden                                                   
+0               0.114791      0.885209     7518  0.514201
+1               0.700326      0.299674     7358  0.880892
+2               0.699396      0.300604     5133  0.882028
+3               0.493116      0.506884     3995  0.999863
+4               0.234110      0.765890     3477  0.785107
+5               0.518226      0.481774     3292  0.999041
+6               0.514706      0.485294     2652  0.999376
+7               0.336878      0.663122     2069  0.921800
+8               0.288587      0.711413     1691  0.866889
+9               0.170537      0.829463     1378  0.658932
+10              0.536114      0.463886      983  0.996234
+11              0.516026      0.483974      936  0.999259
+12              0.416122      0.583878      918  0.979603
+13              0.373016      0.626984      882  0.952960
+14              0.753681      0.246319      747  0.805391
+15              0.573712      0.426288      563  0.984265
+16              0.753398      0.246602      515  0.805848
+17              0.836257      0.163743      342  0.643189
+18              0.880309      0.119691      259  0.528472
+19              0.409357      0.590643      171  0.976161
+20              0.727273      0.272727      154  0.845351
+21              0.631579      0.368421      152  0.949452
+22              0.852941      0.147059      102  0.602431

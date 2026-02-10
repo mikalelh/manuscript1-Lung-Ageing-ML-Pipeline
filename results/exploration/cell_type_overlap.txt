@@ -1,0 +1,43 @@
+Cell type names (canonical): Tabula Muris vs Calico (standardized)
+Same name in both = match; only in one = unmatched in that dataset.
+============================================================
+
+Matched (in both datasets) (9):
+  B cell
+  NK cell
+  T cell
+  alveolar macrophage
+  ciliated columnar cell of tracheobronchial tree
+  classical monocyte
+  non-classical monocyte
+  type II pneumocyte
+  vein endothelial cell
+
+Only in TM (21):
+  CD4-positive, alpha-beta T cell
+  CD8-positive, alpha-beta T cell
+  adventitial cell
+  basophil
+  bronchial smooth muscle cell
+  club cell of bronchiole
+  dendritic cell
+  endothelial cell of lymphatic vessel
+  fibroblast of lung
+  intermediate monocyte
+  lung macrophage
+  lung neuroendocrine cell
+  mature NK T cell
+  myeloid dendritic cell
+  neutrophil
+  pericyte cell
+  plasma cell
+  plasmacytoid dendritic cell
+  pulmonary interstitial fibroblast
+  regulatory T cell
+  smooth muscle cell of the pulmonary artery
+
+Only in Calico (4):
+  leukocyte
+  mast cell
+  myeloid cell
+  stromal cell

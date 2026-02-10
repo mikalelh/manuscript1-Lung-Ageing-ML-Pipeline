@@ -1,0 +1,24 @@
+Column comparison: Tabula Muris vs Calico (standardized)
+============================================================
+
+--- adata.obs columns ---
+In BOTH (3): age, cell_ontology_class, n_genes
+
+Only in TM (9): cell, cell_ontology_id, free_annotation, method, mouse.id, sex, subtissue, tissue, tissue_free_annotation
+
+Only in Calico (11): animal, batch, cell_type_original, louvain, n_counts, percent_Rn45s, percent_mito, pred_type, replicate, sample_idx, subtype
+
+--- adata.var columns ---
+In BOTH (1): n_cells
+
+Only in TM: (none)
+
+Only in Calico (52): feature_types-0, feature_types-1, feature_types-10, feature_types-11, feature_types-12, feature_types-2, feature_types-3, feature_types-4, feature_types-5, feature_types-6, feature_types-7, feature_types-8, feature_types-9, gene_ids-0, gene_ids-1, gene_ids-10, gene_ids-11, gene_ids-12, gene_ids-2, gene_ids-3, gene_ids-4, gene_ids-5, gene_ids-6, gene_ids-7, gene_ids-8, gene_ids-9, genome-0, genome-1, genome-10, genome-11, genome-12, genome-2, genome-3, genome-4, genome-5, genome-6, genome-7, genome-8, genome-9, n_cells-0, n_cells-1, n_cells-10, n_cells-11, n_cells-12, n_cells-2, n_cells-3, n_cells-4, n_cells-5, n_cells-6, n_cells-7, n_cells-8, n_cells-9
+
+--- Harmonization columns (used in 03_preprocess_discovery) ---
+  age          -> age_months (numeric)
+  cell_ontology_class -> cell_type_raw
+  dataset_source (added)
+
+  age: TM=yes, Calico=yes  (age_months)
+  cell_ontology_class: TM=yes, Calico=yes  (cell_type_raw)
