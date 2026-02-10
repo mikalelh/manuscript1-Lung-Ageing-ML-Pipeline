@@ -65,6 +65,16 @@ python models/lstm_aging_model.py
 - **Outputs:** Best checkpoint per cell type in `results/models/`, summary `results/lstm_training_summary.csv`, loss curves in `figures/`.
 - **Dependencies:** torch, scanpy, sklearn.
 
+### Google Colab (free GPU)
+
+You can run the LSTM on **Google Colab** with a free GPU:
+
+1. Open **`notebooks/colab_lstm_aging.ipynb`** in Colab: upload the notebook from the repo, or use the link from GitHub (open the file → “Open in Colab” if the repo is on GitHub).
+2. **Runtime → Change runtime type → GPU** (e.g. T4).
+3. Run the cells: clone repo, install deps, upload `discovery_combined.h5ad` (or copy from Drive), then run training. Download results from the last cell.
+
+The notebook is at `notebooks/colab_lstm_aging.ipynb`.
+
 ### Model choice: LSTM vs MLP
 
 | Context | Model used | Checkpoint name |
